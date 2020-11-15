@@ -1,145 +1,233 @@
-body{
-    font-family:'Raleway', sans-serif;
-    font-size: 14px;
-    color: #a7aaaf;
-    margin: 0;
-    background-color: white;
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #a7aaaf;
+  margin: 0;
+  background-color: white;
 }
 *,
 *::before,
-*::after{
-box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
-.container{
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 /* header */
 .header {
-position: absolute;
-top: 0;
-left: 0;
-z-index: 1000;
-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
 }
 .header__inner {
-    align-items: center;
-    padding: 35px 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #505369;
+  align-items: center;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #505369;
 }
 .header__logo {
 }
 .nav {
-font-size: 13px;
-font-weight: 700;
+  font-size: 13px;
+  font-weight: 700;
 }
 .nav__link {
-    margin-left: 50px;
-    color: #ffffff;
-    text-decoration: none;  
-    text-transform: uppercase;
-    opacity: .75;
-    transition: opacity .2s linear;
+  margin-left: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.75;
+  transition: opacity 0.2s linear;
 }
-.nav__link:first-child{
-    margin-left: 0;
+.nav__link:first-child {
+  margin-left: 0;
 }
-.nav__link:hover{
-
-    opacity: 1;
+.nav__link:hover {
+  opacity: 1;
 }
 /* intro */
-.intro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 100px;
-    background: #31344e url(../img/intro-bg/ActiveBox_01.jpg) center no-repeat;
-    height: 750px;
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  background: #31344e url(../img/intro-bg/ActiveBox_01.jpg) center no-repeat;
+  height: 750px;
 }
-.intro__inner{
-    max-width: 970px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
+.intro__inner {
+  max-width: 970px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
-.intro__title{
-font-size: 65px;
-line-height: 1.1;
-color: white;
-font-weight: 700;
-font-family: "Open Sans", sans-serif;
-margin-bottom: 30px;
-text-transform: uppercase;
+.intro__title {
+  font-size: 65px;
+  line-height: 1.1;
+  color: white;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
-.intro__subtitle{
-    font-size: 22px;
-    line-height: 1.5;
-    color: #ffffff;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    margin-bottom: 60px;
+.intro__subtitle {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
-.btn{    
-display: inline-block;
-font-size: 13px;
-line-height: 1.4;
-color: #ffffff;
-font-weight: 600;
-text-transform: uppercase;
-font-family: "Raleway", sans-serif;
-text-decoration: none;
-padding: 14px 40px;
-border-radius: 2px;
-vertical-align: top;
-font-family: inherit;
-cursor: pointer;
-border: 0;
-transition: background .2s linear;
+.btn {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  padding: 14px 40px;
+  border-radius: 2px;
+  vertical-align: top;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  transition: background 0.2s linear;
 }
-.btn--red{
-    background-color: #e84545;
+.btn--red {
+  background-color: #e84545;
 }
-.btn--red:hover{
-    background-color: #f00b0b;
+.btn--red:hover {
+  background-color: #f00b0b;
 }
 /* features */
 .container {
 }
 .features-body {
-    display: flex;
-    margin: 100px 0;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 100px 0;
+  flex-wrap: wrap;
 }
 .features__item {
-    width: 33.3333%;
-    text-align: center;
-    padding: 0 40px;
-    margin: 25px 0;
+  width: 33.3333%;
+  text-align: center;
+  padding: 0 40px;
+  margin: 25px 0;
 }
 .features__icon {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .features__title {
-font-size: 14px;
-color: #2d3033;
-font-weight: 700;
-text-transform: uppercase;
-margin-bottom: 15px;
+  font-size: 14px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .features__text {
-    line-height: 1.5;
-    font-size: 14px;
-    color: #6c7279;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #6c7279;
 }
-
+/* works */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+.works__item {
+  width: 25%;
+  overflow: hidden;
+  height: 350px;
+  position: relative;
+}
+.works__item:hover .works__content {
+  opacity: 1;
+}
+.works__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.works__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(228, 81, 81, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.works__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.works__text {
+  font-size: 14px;
+  color: #ffffff;
+}
+/* team */
+.team {
+  margin: 100px 0 70px;
+}
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.team__item {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.team__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.team__name {
+  font-size: 22px;
+  color: #2d3033;
+  margin-bottom: 8px;
+}
+.team__prof {
+  font-size: 13px;
+  color: #e84545;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.team__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7279;
+}
+.team__social {
+}
